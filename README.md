@@ -1,3 +1,8 @@
+# Angular6Components Source
+
+This project is based on YouTube tutorial by JavaBrains https://www.youtube.com/channel/UCYt1sfh5464XaDBH0oH_o7Q
+https://www.youtube.com/playlist?list=PLqq-6Pq4lTTbh7bUrKwyCWr6ABBFEd4bD
+
 # Angular6Components
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
