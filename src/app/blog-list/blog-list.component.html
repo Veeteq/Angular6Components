@@ -1,5 +1,9 @@
 <p>blog-list works!</p>
 <app-blog-post-tile 
-    *ngFor="let category of categories"
+    *ngFor="let category of categories[currentPageNumber]"
     [category]="category">
 </app-blog-post-tile>
+<app-paginator 
+  [elementsCount]="categories.length" 
+  (pageNumberClickedEventEmmiter)="updatePageNumber($event)">
+</app-paginator>
