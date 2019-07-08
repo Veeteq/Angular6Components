@@ -7,6 +7,10 @@ import { BlogListComponent } from './blog-list/blog-list.component';
 import { TruncatePipe } from './truncate.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { PaginatorComponent } from './paginator/paginator.component';
+import { BlogDataService } from './blog-data.service';
+import { HighlightDirective } from './highlight.directive';
+import { CardComponent } from './card/card.component';
+import { ShellComponent } from './shell/shell.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,16 @@ import { PaginatorComponent } from './paginator/paginator.component';
     BlogPostTileComponent,
     BlogListComponent,
     TruncatePipe,
-    PaginatorComponent
+    PaginatorComponent,
+    HighlightDirective,
+    CardComponent,
+    ShellComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule
   ],
-  providers: [TruncatePipe],
+  providers: [TruncatePipe, BlogDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

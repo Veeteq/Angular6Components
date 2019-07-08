@@ -1,0 +1,15 @@
+.screen {
+    border: 1px solid green; 
+    float: left; 
+    min-height: 95%; 
+    margin: 2px; 
+    padding: 10px; 
+    min-width: 95%; 
+    position:relative; 
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

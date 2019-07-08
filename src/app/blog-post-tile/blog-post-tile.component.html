@@ -1,7 +1,8 @@
-<div class="card">
-    <div class="card-body">
+<div class="card blog-tile" [ngClass]="{'fav':category.isFavorite}">
+    <div class="card-body" appHighlight color="lightgreen">
         <h5 class="card-title" (click)="showFullText()">{{category.name }}</h5>
         <p class="card-text">{{category.id}}</p>
-        <a href="#" class="btn btn-primary">Read</a>
+        <a href="#" class="btn btn-primary blog-btn">Read</a>
+        <a href="#" class="btn btn-primary" (click)="setFavorite()">Favorite</a>
     </div>
 </div>
